@@ -6,6 +6,12 @@ html {
   line-height: 1.5;
 }
 
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
 *,
 *::before,
 *::after {
@@ -24,4 +30,20 @@ body {
 img {
   display: block;
   width: 100%;
+}
+
+header {
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+}
+
+@media only screen and  (min-width: 25em) {
+
 }
