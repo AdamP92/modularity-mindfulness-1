@@ -27,6 +27,7 @@ html {
 
 body {
   margin: 0;
+  font-size: 1rem;
 }
 
 img {
@@ -38,14 +39,79 @@ header {
   text-align: center;
 }
 
-li {
-  display: inline-block;
+h1 {
+  margin: 1rem 0 0 0;
+}
+
+section {
+  margin: 1rem;
+  border-top: .2rem solid #e2e2e2;
+  border-bottom: .2rem solid #e2e2e2;
+  border-radius: .3rem;
+}
+
+h2 {
+  font-size: 1.125rem;
+  margin: 0;
 }
 
 ul {
+  padding: 0;
+  margin: auto;
   list-style: none;
 }
 
+li {
+  display: inline-block;
+  margin: 0;
+}
+
+li a {
+  color: #3783a3;
+  margin: .5rem;
+  font-size: 1.125rem;
+}
+
+.image {
+  margin: 1rem;
+}
+
 @media only screen and  (min-width: 25em) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+  }
+
+  .title {
+
+  }
+
+  nav {
+
+  }
+
+  .img {
+
+  }
+}
+
+@media only screen and  (min-width: 38em) {
 
 }
+
+@media only screen and  (min-width: 60em) {
+
+}
+
+@media only screen and  (min-width: 90em) {
+
+}
+
+#e2e2e2
+#3783a3
+display: grid;
+grid-template-columns
+display: flex
+justify-content
+align-items
