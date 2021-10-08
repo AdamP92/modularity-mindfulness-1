@@ -52,7 +52,7 @@ h1 {
 }
 
 h1 span {
-  font-size: 1.125rem
+  font-size: 1.125rem;
 }
 
 nav ul {
@@ -155,4 +155,5 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
   }
+
 }
