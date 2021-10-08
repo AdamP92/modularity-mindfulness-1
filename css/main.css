@@ -36,82 +36,123 @@ img {
 }
 
 header {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem .5rem;
 }
 
 h1 {
-  margin: 1rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0 1rem;
+}
+
+h1 span {
+  font-size: 1.125rem
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1.125rem;
+}
+
+nav li {
+  padding: 0 .5em;
+}
+
+nav a {
+  color: #3783a3;
+  text-decoration: #3783a3;
+}
+
+main img {
+  margin-bottom: 1.5rem;
+}
+
+.intro {
+  margin: 0 auto 1.5rem;
+  max-width: 30em;
+  padding: 1rem;
+  border-bottom: .2rem solid #e2e2e2;
+  border-top: .2rem solid #e2e2e2;
+  text-align: center;
+}
+
+.intro i {
+  font-size: 2rem;
+}
+
+main {
+  margin-bottom: 1.5rem;
+  padding: 0 1rem;
 }
 
 section {
-  margin: 1rem;
-  border-top: .2rem solid #e2e2e2;
-  border-bottom: .2rem solid #e2e2e2;
-  border-radius: .3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+article {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 h2 {
-  font-size: 1.125rem;
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 0 0 1.5rem;
+  font-size: 1.5rem;
 }
 
-ul {
-  padding: 0;
-  margin: auto;
-  list-style: none;
+h2 span {
+  font-size: 1rem;
 }
 
-li {
-  display: inline-block;
-  margin: 0;
+article p {
+  margin: 0 0 1.5rem;
 }
 
-li a {
+article a {
+  border: .2rem solid #3783a3;
   color: #3783a3;
-  margin: .5rem;
-  font-size: 1.125rem;
+  text-decoration: none;
+  padding: .5em 1em .6em;
+  margin-top: auto;
+  border-radius: .3rem;
 }
 
-.image {
-  margin: 1rem;
+footer {
+  padding: 1rem;
+  padding-top: .2rem solid #e2e2e2;
+  text-align: center;
 }
 
-@media only screen and  (min-width: 25em) {
+@media only screen and (min-width: 38em) {
+
   header {
-    display: grid;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  h1 {
+    align-items: start;
+  }
+
+  section {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(5, 1fr);
-  }
-
-  .title {
-
-  }
-
-  nav {
-
-  }
-
-  .img {
-
+    grid-template-rows: 1fr;
   }
 }
-
-@media only screen and  (min-width: 38em) {
-
-}
-
-@media only screen and  (min-width: 60em) {
-
-}
-
-@media only screen and  (min-width: 90em) {
-
-}
-
-#e2e2e2
-#3783a3
-display: grid;
-grid-template-columns
-display: flex
-justify-content
-align-items
